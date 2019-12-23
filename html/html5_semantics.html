@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML 5 semantics</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		ul{
+			padding : 0;
+			list-style: none
+		}
+		body{
+			font-family: Arial, Helvetica, Sans-serif;
+			color : #333;
+			line-height: 1.4 
+		}
+		#header{
+			margin-bottom: 15px;
+			background-color: #333;
+			color : #fff;
+			padding : 10px;
+		}
+		#main{
+			float:  left;
+			width : 69%;
+		}
+		#sidebar {
+			float: right;
+			width: 29%
+		}
+		.clr{
+			clear: both
+		}
+		#footer{
+			background-color: #333;
+			color : #fff;
+			padding: 10px
+		}
+		.text-center{
+			display: block;
+			text-align: center;
+		}
+		.card{
+			border : 1px solid #ddd;
+			background : #f4f4f4;
+			padding : 20px;
+			margin-bottom: 10px
+		}
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<header class="card" id="header">
+		<h1>My Website</h1>
+		<p>Just another website</p>
+
+	</header>
+	<!-- Main content (left) -->
+	<main id="main">
+		<!-- Welcome section -->
+		<section id="welcome" class="card">
+			<h2>Welcome to our website.</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br>
+				<a href="#" class="text-center">Click for more</a>
+
+
+			</p>
+		</section>
+		<!-- Blog section -->
+		<section id="blog">
+			<h2>From our blog</h2>
+			<!-- Article one  -->
+			<article class="article">
+				<h3>Article one </h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
+			<article class="article">
+				<h3>Article Two </h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
+		</section>
+	</main>
+	<!-- Sidebar (right) -->
+	<aside id="sidebar" class="card">
+		<h3>Navigation</h3>
+		<!-- Navihation -->
+		<nav>
+			<ul id="main-nav">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		
+		<hr>
+		<h3>Contact Us</h3>
+		<ul>
+			<li><strong>Address : </strong> 50 Main st, Boston MA</li>
+			<li><strong> Phone : </strong> (555) 555-5555</li>
+			<li><strong> Email : </strong> me@somethingcool.com</li>
+		</ul>
+	</aside>
+	<div class="clr"></div>
+	<footer id="footer">
+		<p class="text-center"> Copyright &copy; My website 2019</p>
+	</footer>
+</body>
+</html>
