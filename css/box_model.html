@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box model - Margin and padding</title>
+	<style type="text/css">
+		/* CSS Reset*/
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.box{
+			background-color: #f4f4f4;
+			border : 2px solid #777;
+			/* Padding on all sides */
+			padding : 20px;
+			/* Padding per side */
+			padding-top: 20px;
+			padding-right: 10px;
+			padding-bottom: 20px;
+			padding-left: 10px;
+			/* padding shorthand = top right bottom left*/
+			padding : 20px 10px 20px 10px;
+			/* padding shorthand : top/bottom left/right*/
+			padding : 20px 10px;
+			/*Margin on all sides*/
+			margin: 20px;
+			/* margin per side */
+			margin-top: 20px;
+			margin-right: 10px;
+			margin-bottom: 20px;
+			margin-left: 10px;
+			/* margin shorthand = top right bottom left*/
+			margin : 20px 10px 20px 10px;
+			/* margin shorthand : top/bottom left/right*/
+			margin : 20px 10px;
+
+		}
+		.box p{
+			padding-bottom: 10px
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h3>Box One</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<div class="box">
+		<h3>Box One</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+</body>
+</html>
