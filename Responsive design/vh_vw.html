@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>vh and vw in CSS</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0
+		}
+		body{
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		header{
+			color : #fff;
+			background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+			height: 100vh;
+			text-align: center;
+			padding: 20px;
+			padding-top: 15rem;
+
+		}
+		header h1{
+			font-size: 3rem
+		}
+		header p{
+			margin : 1rem 0rem;
+		}
+		.container{
+			width : 80vw;
+			margin: auto
+		}
+		.btn{
+			display: inline-block;
+			text-decoration: none;
+			background-color: #f4f4f4;
+			color : #333;
+			padding: 0.75rem 2rem;
+			margin: 
+		}
+		section{
+			padding: 2rem
+		}
+		@media(max-height: 450px){
+			header{
+				padding-top: 5rem
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Welcome To Our Website</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>	
+		
+		<a href="#" class="btn">Find Out More</a>
+	</header>
+	<section>
+		<h1>About Our Company</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</section>
+</body>
+</html>
