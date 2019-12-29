@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex basics</title>
+	<style type="text/css">
+		#container{
+			display: flex;
+			flex-direction: row;/*default*/
+			/*flex-direction: row-reverse;*/
+			/*flex-direction: column*/
+			flex-wrap: wrap;
+			/*flex-flow: row wrap*/
+		}
+		.item{
+			border : 1px solid #ccc;
+			background-color: #f4f4f4;
+			padding: 1rem;
+			text-align: center;
+			flex: 1;
+			margin: 0.75rem
+		}
+		.item:first-child{
+			flex : 2;
+		}
+	</style>
+</head>
+<body>
+		<div id="container">
+			<div class="item">
+				<h3>Item 1</h3>
+			</div>
+			<div class="item">
+				<h3>Item 2</h3>
+			</div>
+			<div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+			</div>
+			<div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div><div class="item">
+				<h3>Item 3</h3>
+			</div>
+		</div>
+
+</body>
+</html>

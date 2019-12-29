@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex align</title>
+	<style type="text/css">
+		.container{
+			background-color: #555;
+			display: flex;
+			flex-wrap: wrap;
+			/* Justify-content is used to align items horizontally.*/
+
+			/*justify-content: flex-start;*/
+			/*justify-content: flex-end;*/
+			/*justify-content: space-around;*/
+
+			justify-content: center;
+			/*justify-content: space-between;*/
+			/*justify-content: space-evenly;*/
+			height : 600px;/* For align-items to work, we have to assign height to the container first.*/
+
+			/* align-items is used to align items vertically.*/
+
+			/*align-items: stretch;*//*default*/
+			/*align-items: flex-start;*/
+			/*align-items: flex-end;*/
+			align-items: flex-start;
+			/*align-items: flex-start;*/
+			/*align-items: flex-start;*/
+
+			/*align items vertical when there is extra space.*/
+			/*align-content: flex-start;*/
+			/*
+				align-content: flex-start;
+				align-content: flex-end;
+				align-content: space-between;
+				align-content: space-around;
+				align-content: stretch;
+			*/
+			margin-top : 50px;
+		}
+		.item{
+			border : 1px solid #ccc;
+			background-color: #f4f4f4;
+			text-align: center;
+			flex-basis : 200px;/* Equivalent to width : 200px*/
+			padding: 1rem;
+			margin : 0.5rem;
+		}
+		.item-1{
+			order: 3
+		}
+		.item-3{
+			order : 1;
+		}
+		.item-2{
+			/* align single item vertically.*/
+			align-self: center;
+		/*	align-self: flex-end;
+			align-self: flex-start;
+			align-self: baseline;
+			align-self: stretch;*/
+			order : 2;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item item-1"><h1>Item 1</h1></div>
+		<div class="item item-2"><h1>Item 2</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		
+	</div>
+	<!-- <div class="container">
+		<div class="item item-1"><h1>Item 1</h1></div>
+		<div class="item item-2"><h1>Item 2</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+		<div class="item item-3"><h1>Item 3</h1></div>
+	</div> -->
+</body>
+</html>
