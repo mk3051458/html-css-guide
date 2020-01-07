@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyframes in css</title>
+	<style type="text/css">
+		body{
+			background-color: #333
+		}
+		.box{
+			width: 200px;
+			height : 200px;
+			position: relative;
+			background: #fff;
+			/*animation-name: animate1;
+			animation-duration: 2s;
+			animation-iteration-count: 2;
+			animation-fill-mode: forwards;
+			animation-delay: 2s;  wait for 2s and then animation starts.
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;*/
+			animation : animate1 2s forwards 1s ease-in-out;
+		}
+		@keyframes animate1{
+			0%{
+				top : 0;
+				left : 0;
+
+			}
+			25%{
+				top : 0;
+				left : 300px;
+				background: red;
+				border-radius: 50% 0 0 0 ;
+			}
+			50%{
+				top : 300px;
+				left : 300px;
+				border-radius: 50% 50% 0 0 ;
+
+				background-color: green
+			}
+			75%{
+				top : 300px;
+				left : 0;
+				border-radius: 50% 50% 50% 0 ;
+
+				background: blue
+			}
+			100%{
+				top : 0;
+				left : 0;
+				border-radius: 50% ;
+
+				background: #fff
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Before and after pseudoselectors</title>
+	<style type="text/css">
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #333;
+			color : #fff;
+			margin: 0
+		}
+		header{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		/* Adding image overlay using before pseudoselector.*/
+		header:before{
+			content: '';
+			background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover ;
+			opacity: 0.4;
+			position: absolute;
+			top : 0;	
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1
+		}
+		header h1{
+			font-size: 4rem;
+			margin: 1rem
+		}
+		.is-required:after{
+			content: '*';
+			color: red
+		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		<h1>Hello world!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. 
+		</p>
+	</header>
+	<section>
+		<h3>lorem ipsem dolor.</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<label for="name" class="is-required">Name</label>
+	<input type="text" name="name" id="name">
+	</section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text shadows</title>
+	<style type="text/css">
+		h1{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 3rem
+		}
+		h1.a{
+			/* h-shadow v-shadow color */
+			text-shadow: .2rem .2rem steelblue
+		}
+		h1.b{
+			/* h-shadow v-shadow blur color */
+			text-shadow: .4rem .3rem 0.7rem steelblue
+		}
+		h1.c{
+			/* White text*/
+			color: #fff;
+			/* h-shadow v-shadow blur color */
+			text-shadow: .4rem .3rem 0.7rem steelblue
+		}
+		h1.d{
+			/* -h-shadow -v-shadow blur color */
+			text-shadow: -.4rem -.3rem 0.7rem steelblue
+		}
+	</style>
+</head>
+<body>
+	<h1 class="a">Welcome To My Website</h1>
+	<h1 class="b">Welcome To My Website</h1>
+	<h1 class="c">Welcome To My Website</h1>
+	<h1 class="d">Welcome To My Website</h1>
+</body>
+</html>

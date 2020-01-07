@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box shadows in css</title>
+	<style type="text/css">
+		.container{
+			display: flex;
+		}
+		.box{
+			padding: 1rem;
+			margin: 1rem;
+			background-color: coral;
+			color: #fff;
+			/* box-shadow : offset-x offset-y color*/
+			box-shadow: 10px 10px teal;
+			/* box-shadow : offset-x offset-y blur-radius color*/
+			box-shadow: 2px 2px 10px teal;
+			/* box-shadow : -offset-x -offset-y blur-radius color; Negative values are given for shadow on left ad top*/
+			box-shadow: -2px -2px 10px teal;
+			/* box-shadow : offset-x offset-y blur-radius spread-radius color*/
+			box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.1);
+			/* inset offset-x offset-y color*; inset will opposite the directions mentined in the stylesheet*/
+			box-shadow: inset 2px 2px teal;
+		    /* Multiple shadows */
+		    box-shadow: 2px 2px teal, inset 2px 2px green;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolo.</p>
+		</div>
+		<div class="box">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolo.</p>
+		</div>
+		<div class="box">
+			<h3>Heading</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolo.</p>
+		</div>
+	</div>
+</body>
+</html>
